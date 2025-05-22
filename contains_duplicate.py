@@ -1,6 +1,7 @@
 from typing import List
 
 ## initial solution using dict
+## better solution using set
 def contains_duplicate(nums: List[int]) -> bool:
     element_counts = {}
     for num in nums:
@@ -14,7 +15,7 @@ def contains_duplicate(nums: List[int]) -> bool:
             return True
     return False
 
-## better solution using dict
+
 def contains_duplicate2(nums: List[int]) -> bool:
     seen = set()
     for num in nums:
